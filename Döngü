@@ -1,0 +1,26 @@
+
+#while Döngüsü
+a=8
+#while (a > 5):
+#    print(a)
+#    a+=1
+
+# klavyeden -1 girilene kadar sayıların toplamı
+toplam=0
+
+while (True):
+    sayi=int(input("sayı giriniz"))
+    
+        
+    if sayi==-1:
+        print("sayi toplam ",toplam)
+
+        break
+    else:
+        toplam+=sayi
+    
+        continue
+
+
+
+
