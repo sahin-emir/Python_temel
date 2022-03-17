@@ -1,0 +1,4 @@
+
+Bu klasörde Kütüphanelr,Döngüler ,Şart yapıları , bir takım sayısal egitici oyunlar,tarzında bir klasörden oluşur
+
+// In this folder, Libraries, Loops, Conditional structures, some numerical educational games, consist of a folder.
