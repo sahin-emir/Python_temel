@@ -1,0 +1,20 @@
+## Rastgele bir 20 elemanlı listede   1-100 arasın rastgele sayı 
+# atanacak bu listede en az 2 tane 3,
+# 4 tane 7 ve 5 tane 8 olacak garantiye kadar çalışcak
+
+list=[None]*20
+sayac=0
+while(True):
+    sayac+=1
+    print(sayac," deneme")
+    for i in range(0,len(list)):
+        list[i]=r.randint(1,50)
+    ucler = list.count(3)
+    yediler=list.count(7)
+    sekizler=list.count(8)
+
+    if(ucler>=2 and yediler>=4 and sekizler>=8):
+        print(list)
+        break
+    else:
+        continue
