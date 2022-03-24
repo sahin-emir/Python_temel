@@ -72,7 +72,7 @@ print(f"x standart sapma: {standartSapmaBul(x)},\n")
 print(f"x varyans: {varyansBul(x)},\n")
 
 
-
+Güven aralığı 
 
 #from scipy.stats import t
 #import numpy
