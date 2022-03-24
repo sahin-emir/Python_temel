@@ -70,3 +70,44 @@ print(f"x medyan: {medyanBul(x)},\n")
 print(f"x standart sapma: {standartSapmaBul(x)},\n")
 
 print(f"x varyans: {varyansBul(x)},\n")
+
+
+
+
+#from scipy.stats import t
+#import numpy
+
+
+dizi = [5,6,5,3,7,9,6,4,8]
+#aralik = 0.95
+#diziOrt = numpy.mean(dizi) 
+#stdSapma = numpy.std(dizi)
+#serbestlik_derecesi = len(dizi)-1 
+#tkritigi = numpy.abs(t.ppf((1-aralik)/2, serbestlik_derecesi))
+#print((diziOrt-stdSapma*tkritigi/numpy.sqrt(len(dizi)), diziOrt+stdSapma*tkritigi/numpy.sqrt(len(dizi))) )
+#print(stdSapma)
+#print(stdSapma+1,96*6/100)
+
+
+import math
+
+#example input: 3 5 7 9 ...
+#dizi = []
+z_crit = 1.96
+
+def mean(data):
+    return sum(data) / len(data)
+
+def variance(data):
+    return sum([(x - mean(data)) ** 2 for x in data]) / len(data)
+
+def std(data):
+    return math.sqrt(variance(data))
+
+ortalama = mean(dizi)
+standart_sapma = std(dizi)
+hata_payi = z_crit*standart_sapma/ math.sqrt(len(dizi))
+guven_araligi_low = ortalama - hata_payi
+guven_araligi_high = ortalama + hata_payi
+
+print(guven_araligi_low, guven_araligi_high)
