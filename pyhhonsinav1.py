@@ -50,3 +50,30 @@ apuan=int(input("kaç puanla başlamak istersiniz "))
 bpuan=int(input("kaç bpuanla başlamak istersiniz "))
 oyuncu=Oyun(isim,apuan,bpuan)
 oyuncu.oyna()
+
+
+import random as rnd
+import time
+
+i=1
+while True:
+    liste=[None]*100
+    print(i,"deneme")
+    i+=1
+    baslangiczaman=time.time()
+    for i in range(0,len(liste)):
+        liste[i]=rnd.randint(1,100)
+
+    if(liste.count(20)>2 and (liste.count(5)>3)):
+        print("sayılar bulundu ")
+        print("20 rakam adedi",liste.count(20))
+        print("5 rakam adedi",liste.count(5))
+        break
+    else:
+        print("işlem devam ediyor")
+        print("20 rakam adedi",liste.count(20))
+        print("5 rakam adedi",liste.count(5))
+        
+bitis=time.time()-baslangiczaman   
+print("kod ",bitis*10,"saniye kadar çalıştı ") 
+    
