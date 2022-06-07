@@ -1,0 +1,30 @@
+
+
+#b2=Button(text="2.buton",
+#          fg="red",
+#          bg="black",
+#          width=20,
+#          height=20,
+#          command=yazdir
+#          )
+#b2.pack(side=RIGHT)
+
+
+#p.mainloop()
+
+
+self.b1=Button(pencere,text="Topla",command=self.topla)
+      
+         self.l1.place(x=100,y=50)
+        def topla(self):
+        self.t3.delete(0,"end")
+        sayi1=int(self.t1.get())
+        sayi2=int(self.t2.get())
+        sonuc=sayi1+sayi2
+        self.t3.insert(END,str(sonuc))
+        
+        pencere=Tk()
+p1=Islem(pencere)
+#p1.title("dör işlem")
+
+pencere.mainloop()
