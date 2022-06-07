@@ -77,3 +77,13 @@ while True:
 bitis=time.time()-baslangiczaman   
 print("kod ",bitis*10,"saniye kadar çalıştı ") 
     
+    
+    import os 
+os.getcwd()
+liste=["a","b","c","d"]
+
+dosya=open("ilkt.txt","w")
+for i in liste:
+    dosya.write(i+"ln")
+    
+dosya.close()
